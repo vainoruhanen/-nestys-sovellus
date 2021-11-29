@@ -5,10 +5,8 @@ Käyttäjä voi valita äänestyksiä ja katsoa niiden äänestystilanteen ja ä
 
 Ylläpitäjä voi katsoa äänestyksiä, luoda uusia äänetyksiä ja poistaa äänestyksiä.
 
-Äänestyksen valitseminen. Käyttäjä voi etusivulta valikosta valita haluamansa äänestyksen.
+Äänestyksen valitseminen. Käyttäjä voi etusivulta valita haluamansa äänestyksen.
 Käyttäjä näkee valitsemana äänestyksen tilanteen ja voi halutessaan äänestää painamalla äänestä nappia.
-
-Äänestä nappia painamisen jälkeen valitaan äänestys vaihtoehto. Valittaesa ohjelma kysyy vielä haluatko äänestää vaihtoehdoin: kyllä, ei.
 
 
 Ylläpitäjällä
