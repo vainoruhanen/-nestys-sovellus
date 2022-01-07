@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="index.js"></script>
+    <script src="yllapitaja.js"></script>
+
+    <div class="testilinkki"><a href="index.html">Käyttäjä sivulle</a></div>
     <h1>Äänestys sovellus</h1>
 
 
     <div class="aanestys" id="aanestys-luonti">
-        <div class="otsikko"><textarea placeholder="Otsikko"></textarea></div> 
+        <div class="otsikko" id="otsikko1"><textarea id="otsikkoKentta" placeholder="Otsikko"></textarea></div> 
 
         <div class="aanet">
-            <div><textarea placeholder="vaihtoehto 1"></textarea></div>
+            <div id="vaihtoehto1"><textarea id="vaihtoehtoKentta1" placeholder="vaihtoehto 1"></textarea></div>
         </div>
       
        <div class="aanet">
-        <div><textarea placeholder="vaihtoehto 2"></textarea></div>
+        <div id="vaihtoehto2"><textarea id="vaihtoehtoKentta2" placeholder="vaihtoehto 2"></textarea></div>
        </div>
 
-       <div class="luo" id="luo">Luo äänestys</div>
-       <div class="lisaa" id="lisaa">Lisää vaihtoehto</div>
+       <div class="luo" id="luo" onclick="luoAanestys()">Luo äänestys</div>
     </div>
 
 
-    <div class="aanestys" id="aanestys1">
+    <div class="aanestys" id="aanestys1">                                                           
         <div class="otsikko">Kissat vai koirat?</div>
 
         <div class="aanet">
@@ -43,25 +44,6 @@
 
 
     </div>
-
-    <div class="aanestys">
-        <div class="otsikko">Kuuluuko ananas pizzaan</div>
-
-        <div class="aanet">
-            <div>Kyllä:</div>
-            <div>5 ääntä</div> 
-        </div>
-      
-       <div class="aanet">
-        <div>Ei:</div>
-        <div>7 ääntä</div>
-       </div>
-     
-       <div class="aanet">
-        <div>Ehkä:</div>
-        <div>12 ääntä</div>
-       </div>
-
 
     </div>
 </body>

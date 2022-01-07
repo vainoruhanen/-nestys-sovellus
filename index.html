@@ -9,66 +9,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="paivitaAanet()">
     <script src="index.js"></script>
+
+    <div class="testilinkki"><a href="yllapitaja.html">Ylläpitäjäsivulle</a></div>
+    
+
     <h1>Äänestys sovellus</h1>
 
     <div class="aanestys" id="aanestys1">
         <div class="otsikko">Kissat vai koirat?</div>
+        <div>Äänet:</div>
 
         <div class="aanet">
             <div>Kissat:</div>
-            <div>101 ääntä</div> 
+            <div id="kissaAanet">10</div> 
         </div>
       
        <div class="aanet">
         <div>Koirat:</div>
-        <div>100 ääntä</div>
+        <div id="koira">10</div>
        </div>
 
-        <div class="teksti">Äänestä kissat</div>
-        <div class="teksti">Äänestä koirat</div>
+        <div onclick="aanestaKissa()" class="teksti" id="1teksti1">Äänestä: kissat</div>
+        <div onclick="aanestaKoira()" class="teksti" id="1teksti2">Äänestä: koirat</div>
     </div>
 
 
 
 
     <div class="aanestys" id="aanestys2">
-        <div class="otsikko">Äänestys 2</div> 
+        <div class="otsikko">Kuuluuko ananas pizzaan</div>
+        <div>Äänet:</div>
 
         <div class="aanet">
-            <div>Vaihtoehto 1:</div>
-            <div>0 ääntä</div> 
+            <div>Kuuluu:</div>
+            <div id="kuuluu">10</div> 
         </div>
       
        <div class="aanet">
-        <div>Vaihtoehto 2:</div>
-        <div>10 ääntä</div>
+        <div>Ei kuulu:</div>
+        <div id="eiKuulu">10</div>
        </div>
 
-        <div class="teksti">Äänestä 1</div>
-        <div class="teksti">Äänestä 2</div>
-    </div>
-
-
-
-
-
-    <div class="aanestys" id="aanestys2">
-        <div class="otsikko">Äänestys 3</div> <!--textarea tai vastaava jos kysymys on pitkä?, mieti ehkä ylläpitäjä sivua toteuttaessa-->
-
-        <div class="aanet">
-            <div>Vaihtoehto 1:</div>
-            <div>0 ääntä</div> 
-        </div>
-      
-       <div class="aanet">
-        <div>Vaihtoehto 2:</div>
-        <div>0 ääntä</div>
-       </div>
-
-        <div class="teksti">Äänestä 1</div>
-        <div class="teksti">Äänestä 2</div>
+        <div onclick="aanestaKuuluu()" class="teksti" id="2teksti1">Äänestä: kuuluu</div>
+        <div onclick="aanestaEiKuulu()" class="teksti" id="2teksti2">Äänestä: ei kuulu</div>
     </div>
 
 </body>
