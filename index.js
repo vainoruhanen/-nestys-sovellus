@@ -29,14 +29,14 @@ function aanestaKoira(){
 }
 
 function aanestaKissa(){
-    if(onAanestetty2==false){
-        kuuluuAanet++;
-        document.getElementById("2teksti1").style.backgroundColor = "#A9A9A9";
-        document.getElementById("2teksti2").style.backgroundColor = "#A9A9A9";
+    if(onAanestetty1==false){
+        kissaAanet++;
+        document.getElementById("1teksti1").style.backgroundColor = "#A9A9A9";
+        document.getElementById("1teksti2").style.backgroundColor = "#A9A9A9";
     }else{
         window.alert("Olet jo äänestänyt");
     }
-    onAanestetty2 = true;
+    onAanestetty1 = true;
     paivitaAanet();
 }
 
